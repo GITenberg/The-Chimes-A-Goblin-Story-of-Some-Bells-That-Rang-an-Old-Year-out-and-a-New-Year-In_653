@@ -1,0 +1,40 @@
+_repo: The-Chimes-A-Goblin-Story-of-Some-Bells-That-Rang-an-Old-Year-out-and-a-New-Year-In_653
+creator:
+  author:
+    agent_name: Dickens, Charles
+    alias: Boz
+    birthdate: 1812
+    deathdate: 1870
+    gutenberg_agent_id: '37'
+    url: http://www.gutenberg.org/2009/agents/37
+    wikipedia: http://en.wikipedia.org/wiki/Charles_Dickens
+description: "The Chimes: A Goblin Story of Some Bells that Rang an Old Year Out and\
+  \ a New Year In, a short novel by Charles Dickens, was written and published in\
+  \ 1844, one year after A Christmas Carol and one year before The Cricket on the\
+  \ Hearth. It is the second in his series of \"Christmas books\": five short books\
+  \ with strong social and moral messages that he published during the 1840s.\n From\
+  \ Wikipedia (CC BY-SA)."
+gutenberg_issued: '1996-09-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '653'
+  wikidata: Q3828573
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcc 'PR'
+- !lcsh 'Holidays -- Fiction'
+- !lcsh 'Christmas stories'
+title: "The Chimes\r\nA Goblin Story of Some Bells That Rang an Old Year out and a\
+  \ New Year In"
+url: http://www.gutenberg.org/ebooks/653
+wikipedia:
+- https://ar.wikipedia.org/wiki/%D8%AF%D9%82%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D8%AC%D8%B1%D8%A7%D8%B3
+- https://pt.wikipedia.org/wiki/The_Chimes
+- https://ru.wikiquote.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0_(%D0%94%D0%B8%D0%BA%D0%BA%D0%B5%D0%BD%D1%81)
+- https://en.wikipedia.org/wiki/The_Chimes
+- https://kw.wikipedia.org/wiki/An_Kleghigow
+- https://it.wikipedia.org/wiki/Le_campane
+- https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0_(%D0%BF%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D1%8C_%D0%94%D0%B8%D0%BA%D0%BA%D0%B5%D0%BD%D1%81%D0%B0)
