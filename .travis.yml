@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: 6TXdXTpT2B27Xm/TCkL9UQ7gCtuGH8Kj4laazcfLb8K1rgr2qx3/bQWiEBeXOPrY3MKxLRyoieJEuEfRbLzZSiF7AE0KuLE7mYVg2yHxG1pJPPzAuBSIILd682x+VmjHmhnDBn80vxzCuVh16XjID/1vlPGdoKXAVR62DRHkefhzQnWZ/764ed6PQlQjtxUVui7/IseJtW0eQqEJmQHTfOzViGUappojVcG5uv3orZQUN9zAI81D+MpTNy7HInMQ2YTLfW9pN33Hf1RSqtmqWl56iZD7NKqFVX3K1G8IHMxe4VQETAFY5xiO1gGSL3OgTgZj3619bSrPbdZTHdMiAut7pdOQFUcHBHT2yz209RsmjsnmpYOmm/PWkf4xeeH6przmMlwM8YuBHBmCdkoQvJoq1Tr1YuR69KERJTF6pRXGeVbwK8kKj1hbk0fY9tInQK2Mk+8qo7Q/VpLWWkArX1URlqYDyQ3fJarrPEVkJcmbMrW8r3P3VWQw+FMYPbx1FAjSnOMQK4VePzASl3sq7BgZ+gvKJzg8lGbxB4EnsoSp1EnL0+fksIM9Gw1JN4Bo6LX2gB1l3j/nrxGqB4qlvn+SsJMKaf3lMo0mi6nqd85iAA64A5HYYYLIakyBvAwn8uZenLC4eaq2pd0qDnSfc/BEdOAmKCIUcV/h6GDBxPk=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/The-Chimes-A-Goblin-Story-of-Some-Bells-That-Rang-an-Old-Year-out-and-a-New-Year-In_653
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
