@@ -1,5 +1,8 @@
 _repo: The-Chimes-A-Goblin-Story-of-Some-Bells-That-Rang-an-Old-Year-out-and-a-New-Year-In_653
-_version: 0.1.0
+_version: 0.2.0
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   author:
     agent_name: Dickens, Charles
@@ -15,6 +18,8 @@ description: "The Chimes: A Goblin Story of Some Bells that Rang an Old Year Out
   \ Hearth. It is the second in his series of \"Christmas books\": five short books\
   \ with strong social and moral messages that he published during the 1840s.\n From\
   \ Wikipedia (CC BY-SA)."
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/653#The-Chimes-A-Goblin-Story-of-Some-Bells-That-Rang-an-Old-Year-out-and-a-New-Year-In
 gutenberg_issued: '1996-09-01'
 gutenberg_type: Text
 identifiers:
