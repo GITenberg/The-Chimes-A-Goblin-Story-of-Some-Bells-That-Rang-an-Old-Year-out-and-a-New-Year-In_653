@@ -1,5 +1,5 @@
 _repo: The-Chimes-A-Goblin-Story-of-Some-Bells-That-Rang-an-Old-Year-out-and-a-New-Year-In_653
-_version: 0.2.0
+_version: 0.2.1
 covers:
 - cover_type: generated
   image_path: cover.png
@@ -33,6 +33,7 @@ subjects:
 - !lcc 'PR'
 - !lcsh 'Holidays -- Fiction'
 - !lcsh 'Christmas stories'
+- GITenberg
 title: "The Chimes\r\nA Goblin Story of Some Bells That Rang an Old Year out and a\
   \ New Year In"
 url: http://www.gutenberg.org/ebooks/653
